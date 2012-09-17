@@ -1,0 +1,10 @@
+<ul id="homepage_cycle">
+  <% Spree::CycleImage.all.each do |cycle_image| %>
+    <li>
+      <%= image_tag(cycle_image.image.url(:medium)) %>
+    </li>
+  <% end %>
+</ul>
+<script>
+  $('#homepage_cycle').cycle();
+</script>

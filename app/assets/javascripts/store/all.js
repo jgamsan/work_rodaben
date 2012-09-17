@@ -9,5 +9,5 @@
 
 //= require store/spree_core
 //= require store/spree_promo
-
+//= require store/spree_cycle
 //= require_tree .

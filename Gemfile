@@ -7,7 +7,11 @@ gem 'rails', '3.2.8'
 
 gem 'pg'
 
-
+group :production do
+  gem 'unicorn'
+  gem 'foreman'
+  gem 'therubyracer' #only required for 0.70.x or later
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -21,7 +25,19 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'rails-i18n'
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'devise-i18n'
+gem 'mechanize'
+gem 'whenever', :require => false
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-unicorn', :require => false
+  gem 'rvm-capistrano'
+  gem 'irbtools'
+  gem 'bullet'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
