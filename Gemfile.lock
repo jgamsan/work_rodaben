@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: e27dce740a440d5643e7d11060440756e4d0084b
+  revision: 97ecd8f2c8aee0c25c06f8248fc550dfadaf6a57
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_auth_devise
-  revision: 99e8efaaf47dcf4e1917f7b4fabc85e71f7b081a
+  revision: 154365f20cc21e497e68b37251cf2e11fc7f1079
   specs:
     spree_auth_devise (1.0.0)
       cancan (= 1.6.7)
@@ -123,7 +123,7 @@ GEM
     bullet (4.1.6)
       uniform_notifier (~> 1.0.0)
     cancan (1.6.7)
-    capistrano (2.13.3)
+    capistrano (2.13.4)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -151,7 +151,7 @@ GEM
       railties (~> 3.1)
       warden (~> 1.1.1)
     devise-i18n (0.5.7)
-    domain_name (0.5.3)
+    domain_name (0.5.4)
       unf (~> 0.0.3)
     erubis (2.7.0)
     every_day_irb (1.2.2)
