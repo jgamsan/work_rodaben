@@ -1,0 +1,5 @@
+es:
+  devise:
+    user_sessions:
+      user:
+        signed_out: "Abandonado Registro"
