@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 10943360cc2412007e79c52389cd71e60afa5c65
+  revision: a9e400d05bbc9478340278cf4dbc643372d79456
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: 97ecd8f2c8aee0c25c06f8248fc550dfadaf6a57
+  revision: f420b968edd213a3172b08477e120ed849bbac78
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -133,7 +133,7 @@ GEM
       capistrano
     chronic (0.6.7)
     clipboard (1.0.1)
-    cocaine (0.3.0)
+    cocaine (0.3.1)
     coderay (1.0.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -199,6 +199,7 @@ GEM
     jquery-rails (2.1.2)
       railties (>= 3.1.0, < 5.0)
       thor (~> 0.14)
+    jruby-pageant (1.1.1)
     json (1.7.5)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
@@ -235,7 +236,8 @@ GEM
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
       net-ssh (>= 2.0.9)
-    net-ssh (2.5.2)
+    net-ssh (2.6.0)
+      jruby-pageant (>= 1.1.1)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
