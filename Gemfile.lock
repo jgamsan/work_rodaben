@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 10943360cc2412007e79c52389cd71e60afa5c65
+  revision: 1fa6737ff7c285e587679d38f99e72b050e192bc
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -133,7 +133,7 @@ GEM
       capistrano
     chronic (0.6.7)
     clipboard (1.0.1)
-    cocaine (0.3.0)
+    cocaine (0.3.1)
     coderay (1.0.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
