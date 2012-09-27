@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 6b15f871d9dcd373749580e76618bda9ad633cbc
+  revision: e5a27db7c5c4d2f405b6614960a12fb5ec129cc1
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: f420b968edd213a3172b08477e120ed849bbac78
+  revision: d888a7b9385d2c6c8dd0fbba07ed77dae5725585
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -263,7 +263,7 @@ GEM
       rack (>= 0.4)
     rack-ssl (1.3.2)
       rack
-    rack-test (0.6.1)
+    rack-test (0.6.2)
       rack (>= 1.0)
     rails (3.2.8)
       actionmailer (= 3.2.8)
