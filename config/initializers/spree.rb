@@ -11,7 +11,7 @@ Spree.config do |config|
   config.allow_ssl_in_production = false
   config.default_country_id = 188
   config.default_locale = "es"
-  config.logo = "logo-rodaben.jpg"
+  config.logo = "logo.png"
   config.prices_inc_tax = true
   config.show_zero_stock_products = false
   config.max_level_in_taxons_menu = 2
