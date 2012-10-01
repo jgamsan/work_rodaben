@@ -1,0 +1,1 @@
+rake db:load_file[spree/towns,/home/jose/RubymineProjects/rodaben/db/default/]

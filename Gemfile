@@ -64,3 +64,4 @@ gem "spree_search_rodaben", :git => "git://github.com/jgamsan/spree_search_rodab
 gem "spree_cycle", :git => "git://github.com/jgamsan/spree_cycle.git"
 gem "spree_contact_us", :git => "git://github.com/jgamsan/spree_contact_us.git"
 gem "spree_suppliers", :git => "git://github.com/jgamsan/spree_suppliers.git"
+gem "spree_workshop", :git => "git://github.com/jgamsan/spree_workshop.git"

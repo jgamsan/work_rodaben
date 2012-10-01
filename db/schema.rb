@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120917170270) do
+ActiveRecord::Schema.define(:version => 20121001143710) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -574,6 +574,13 @@ ActiveRecord::Schema.define(:version => 20120917170270) do
 
   add_index "spree_tokenized_permissions", ["permissable_id", "permissable_type"], :name => "index_tokenized_name_and_type"
 
+  create_table "spree_towns", :force => true do |t|
+    t.integer  "state_id"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "spree_trackers", :force => true do |t|
     t.string   "environment"
     t.string   "analytics_id"
@@ -637,6 +644,20 @@ ActiveRecord::Schema.define(:version => 20120917170270) do
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
+
+  create_table "spree_workshops", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.integer  "town_id"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "email"
+    t.string   "notes"
+    t.decimal  "price_for_car",  :precision => 6, :scale => 2, :default => 0.0
+    t.datetime "created_at",                                                    :null => false
+    t.datetime "updated_at",                                                    :null => false
+    t.decimal  "price_for_moto", :precision => 6, :scale => 2, :default => 0.0
+  end
 
   create_table "spree_zone_members", :force => true do |t|
     t.integer  "zoneable_id"
