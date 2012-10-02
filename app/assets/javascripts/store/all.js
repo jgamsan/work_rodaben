@@ -11,3 +11,4 @@
 //= require store/spree_promo
 //= require store/spree_cycle
 //= require_tree .
+//= require store/spree_workshop
