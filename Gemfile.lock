@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_workshop.git
-  revision: bce9825a5424c655f2226b221707bd8f931e75c4
+  revision: 48ba53b5ba9ef7ac3994af2f96af778f08f75274
   specs:
     spree_workshop (1.2.0)
       spree_core (~> 1.2.0)
