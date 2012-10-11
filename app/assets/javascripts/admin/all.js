@@ -12,3 +12,4 @@
 
 //= require_tree .
 //= require admin/spree_workshop
+//= require admin/spree_addings_for_rodaben

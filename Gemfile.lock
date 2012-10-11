@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: c2b6c4651fc490a931721ea651fa3e6bb95dceee
+  revision: d52fd780d54bc35b6149d0abf8ed64f1175c5ef4
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: 3c1abbb295d312698bd11f199aba0978b30cd992
+  revision: 24701198eca6bcc8a9b9b9d51b7092b989aefde5
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_workshop.git
-  revision: 3f40d550ec2124652c34e806e2da080ea2f528e0
+  revision: 253684507b31eae85b362410d25d1875ed4b0df1
   specs:
     spree_workshop (1.2.0)
       spree_core (~> 1.2.0)
@@ -140,8 +140,8 @@ GEM
       capistrano
     chronic (0.6.7)
     clipboard (1.0.1)
-    cocaine (0.3.2)
-    coderay (1.0.7)
+    cocaine (0.4.0)
+    coderay (1.0.8)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -168,7 +168,7 @@ GEM
       paint (>= 0.8.1)
       unicode-display_width (>= 0.1.1)
     ffaker (1.12.1)
-    foreman (0.60.0)
+    foreman (0.60.2)
       thor (>= 0.13.6)
     g (1.7.1)
     gyoku (0.4.6)
@@ -253,7 +253,7 @@ GEM
     ori (0.1.0)
     orm_adapter (0.0.7)
     paint (0.8.5)
-    paperclip (2.7.1)
+    paperclip (2.8.0)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
       cocaine (>= 0.0.2)

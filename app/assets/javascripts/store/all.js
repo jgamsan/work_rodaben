@@ -12,3 +12,4 @@
 //= require store/spree_cycle
 //= require_tree .
 //= require store/spree_workshop
+//= require store/spree_addings_for_rodaben

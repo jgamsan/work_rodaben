@@ -11,7 +11,8 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121001143710) do
+ActiveRecord::Schema.define(:version => 20121008183141) do
+
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
     t.datetime "expires_at"
@@ -238,6 +239,7 @@ ActiveRecord::Schema.define(:version => 20121001143710) do
     t.string   "payment_state"
     t.string   "email"
     t.text     "special_instructions"
+    t.integer  "workshop_id"
   end
 
   add_index "spree_orders", ["number"], :name => "index_spree_orders_on_number"
@@ -265,6 +267,13 @@ ActiveRecord::Schema.define(:version => 20121001143710) do
     t.string   "state"
     t.string   "response_code"
     t.string   "avs_response"
+  end
+
+  create_table "spree_paypal_accounts", :force => true do |t|
+    t.string "email"
+    t.string "payer_id"
+    t.string "payer_country"
+    t.string "payer_status"
   end
 
   create_table "spree_pending_promotions", :force => true do |t|
@@ -635,11 +644,11 @@ ActiveRecord::Schema.define(:version => 20121001143710) do
     t.integer  "tire_width_id"
     t.integer  "tire_serial_id"
     t.integer  "tire_innertube_id"
-    t.boolean  "tire_gr"
     t.integer  "tire_speed_code_id"
-    t.boolean  "tire_rf"
     t.integer  "tire_season"
     t.decimal  "price_in_offert",    :precision => 8, :scale => 2, :default => 0.0
+    t.boolean  "tire_gr"
+    t.boolean  "tire_rf"
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
