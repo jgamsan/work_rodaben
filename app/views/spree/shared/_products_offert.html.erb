@@ -1,0 +1,35 @@
+<%
+  paginated_products = @searcher.retrieve_products if params.key?(:keywords)
+  paginated_products ||= products
+%>
+<table class="products">
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <% products.each do |product| -%>
+    <tr>
+      <td><%= link_to mini_image(product, :itemprop => "image"), product, :itemprop => 'url' %></td>
+      <td><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %> <br> <%= product.calculate_tires(product.id) %></td>
+      <td><%= product.taxons.where(:parent_id => 2).first.name %></td>
+      <td>
+        <% if (product.price - product.price_in_offert) < 0 %>
+          <span class="price selling" style="color:red">
+          <%= product.display_price %></span>
+          <span class="price selling" itemprop="price" style="text-decoration: line-through;">
+          <%= product.display_price_in_offert %>
+        <% else %>
+          <span class="price selling" itemprop="price">
+          <%= product.display_price %>
+          </span>
+        <% end %>
+      </td>
+    </tr>
+  <% end -%>
+</table>
+
+<% if paginated_products.respond_to?(:num_pages) %>
+  <%= paginate paginated_products %>
+<% end %>

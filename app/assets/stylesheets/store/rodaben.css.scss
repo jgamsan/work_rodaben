@@ -1,0 +1,57 @@
+@import "store/variables";
+nav#taxonomies {
+    .taxonomy-root {
+      text-transform: uppercase;
+      border: 1px solid lighten($body_text_color, 30);
+      margin-bottom: 5px;
+      font-size: $main_navigation_header_font_size;
+      background: #cfe2e4;
+    }
+
+    .taxons-list {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      list-style: none;
+      border: 1px solid lighten($body_text_color, 60);
+      border-collapse: collapse;
+
+
+      li {
+        a {
+          font-size: $main_navigation_font_size;
+        }
+      }
+    }
+  }
+nav#top-nav-bar {
+    text-align: right;
+    margin-top: 10px;
+    }
+
+#datos {
+  border: 1px solid lighten($body_text_color, 30);
+  height: 180px;
+}
+
+#datos-mas {
+  /*padding-top: 20px;*/
+  border: 1px solid lighten($body_text_color, 30);
+  height: 180px;
+}
+.tema {
+  text-transform: uppercase;
+  font-size: $main_navigation_header_font_size;
+  background: #cfe2e4;
+}
+
+span.price {
+    font-weight: bold;
+    color: $link_text_color;
+
+    &.selling {
+      font-size: $product_detail_title_font_size;
+    }
+    &.diff {
+      font-weight: bold;
+    }
+  }
