@@ -37,6 +37,7 @@ group :development do
   gem 'rvm-capistrano'
   gem 'irbtools'
   gem 'bullet'
+  gem 'letter_opener'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
