@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: 24701198eca6bcc8a9b9b9d51b7092b989aefde5
+  revision: b0b4fd4f5aa6749b9b8939714c77c6cdb3828b7e
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -215,7 +215,7 @@ GEM
     kgio (2.7.4)
     launchy (2.1.2)
       addressable (~> 2.3)
-    letter_opener (0.1.0)
+    letter_opener (1.0.0)
       launchy (>= 2.0.4)
     libv8 (3.3.10.4)
     mail (2.4.4)
