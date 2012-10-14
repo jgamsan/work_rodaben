@@ -1,0 +1,2 @@
+<%= select_tag "Marcas", options_from_collection_for_select(Spree::Taxon.where(:parent_id => 2), "id", "name") %>
+<%= submit_tag "Buscar" %>
