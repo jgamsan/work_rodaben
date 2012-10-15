@@ -21,7 +21,7 @@ $(function() {
     var marca = $('select#marcas :selected').text().toLowerCase();
     if(marca == "") marca="0";
     $.get('/t/marcas/' + marca, function(data){
-      $("#content").html(data);
+      $("#default").html(data);
     });
     return false;
   });

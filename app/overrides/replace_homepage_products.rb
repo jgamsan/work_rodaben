@@ -16,7 +16,7 @@ Deface::Override.new(:virtual_path => %q{spree/home/index},
   </div>
   <div class="columns four omega">
     <h3 style="text-align:center;">Noticias</h3>
-    <div id="datos-mas" class="row">
+    <div id="news" class="row">
       <h6 class="tema">mas info</h6>
     </div>
   </div>

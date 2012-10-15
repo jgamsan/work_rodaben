@@ -5,5 +5,4 @@
   <% end %>
   <h6 class='taxonomy-root'><%= t(:shop_by_taxonomy, :taxonomy => "Marca") %></h6>
   <%= select_tag "marcas", options_from_collection_for_select(Spree::Taxon.where(:parent_id => 2), "id", "name") %>
-  <%= submit_tag "Buscar" %>
 </nav>

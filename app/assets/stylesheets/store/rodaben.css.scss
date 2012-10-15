@@ -28,15 +28,10 @@ nav#top-nav-bar {
     margin-top: 10px;
     }
 
-#datos {
-  border: 1px solid lighten($body_text_color, 30);
-  height: 180px;
-}
-
-#datos-mas {
+#news {
   /*padding-top: 20px;*/
   border: 1px solid lighten($body_text_color, 30);
-  height: 180px;
+  height: 400px;
 }
 .tema {
   text-transform: uppercase;
