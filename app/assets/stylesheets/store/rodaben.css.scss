@@ -50,3 +50,6 @@ span.price {
       font-weight: bold;
     }
   }
+#info {
+  border: 1px solid lighten($body_text_color, 30);
+}
