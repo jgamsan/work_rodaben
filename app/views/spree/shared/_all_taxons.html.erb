@@ -1,2 +1,9 @@
-<%= select_tag "Marcas", options_from_collection_for_select(Spree::Taxon.where(:parent_id => 2), "id", "name") %>
-<%= submit_tag "Buscar" %>
+<nav id="taxonomies" class="sidebar-item" data-hook>
+  <% Spree::Taxon.where(:parent_id => 1).each do |taxonomy| %>
+    <h6 class='taxonomy-root'><%= t(:shop_by_taxonomy, :taxonomy => taxonomy.name.singularize) %></h6>
+    <%= taxons_tree(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
+  <% end %>
+  <h6 class='taxonomy-root'><%= t(:shop_by_taxonomy, :taxonomy => "Marca") %></h6>
+  <%= select_tag "marcas", options_from_collection_for_select(Spree::Taxon.where(:parent_id => 2), "id", "name") %>
+  <%= submit_tag "Buscar" %>
+</nav>

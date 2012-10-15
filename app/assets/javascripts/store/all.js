@@ -13,3 +13,16 @@
 //= require_tree .
 //= require store/spree_workshop
 //= require store/spree_addings_for_rodaben
+
+$(function() {
+  // when the #country field changes
+  $("select#marcas").live("change", function() {
+    // make a POST call and replace the content
+    var marca = $('select#marcas :selected').text().toLowerCase();
+    if(marca == "") marca="0";
+    $.get('/t/marcas/' + marca, function(data){
+      $("#content").html(data);
+    });
+    return false;
+  });
+});
