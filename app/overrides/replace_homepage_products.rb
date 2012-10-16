@@ -15,9 +15,9 @@ Deface::Override.new(:virtual_path => %q{spree/home/index},
     </div>
   </div>
   <div class="columns four omega">
-    <h3 style="text-align:center;">Noticias</h3>
+    <h3 style="text-align:center;">Ultimas Noticias</h3>
     <div id="news" class="row">
-      <h6 class="tema">mas info</h6>
+      <%= render :partial => "spree/shared/news" %>
     </div>
   </div>
             </div>

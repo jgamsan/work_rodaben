@@ -23,7 +23,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'haml'
+gem 'haml-rails'
 gem 'jquery-rails'
 gem 'rails-i18n'
 # To use ActiveModel has_secure_password
@@ -66,3 +67,4 @@ gem "spree_cycle", :git => "git://github.com/jgamsan/spree_cycle.git"
 gem "spree_contact_us", :git => "git://github.com/jgamsan/spree_contact_us.git"
 gem "spree_suppliers", :git => "git://github.com/jgamsan/spree_suppliers.git"
 gem "spree_workshop", :git => "git://github.com/jgamsan/spree_workshop.git"
+gem "spree_news", :git => "git://github.com/jgamsan/spree_news.git"

@@ -11,4 +11,5 @@
  *= require_tree .
  *= require store/spree_addings_for_rodaben
  *= require store/spree_workshop
+ *= require store/spree_news
 */

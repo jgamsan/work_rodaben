@@ -26,3 +26,4 @@ $(function() {
     return false;
   });
 });
+//= require store/spree_news

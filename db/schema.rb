@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121008183141) do
+ActiveRecord::Schema.define(:version => 20121016172309) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -283,6 +283,14 @@ ActiveRecord::Schema.define(:version => 20121008183141) do
 
   add_index "spree_pending_promotions", ["promotion_id"], :name => "index_spree_pending_promotions_on_promotion_id"
   add_index "spree_pending_promotions", ["user_id"], :name => "index_spree_pending_promotions_on_user_id"
+
+  create_table "spree_posts", :force => true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.boolean  "published"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "spree_preferences", :force => true do |t|
     t.string   "name"
