@@ -2,7 +2,6 @@
 nav#taxonomies {
     .taxonomy-root {
       text-transform: uppercase;
-      border: 1px solid lighten($body_text_color, 30);
       margin-bottom: 5px;
       font-size: $main_navigation_header_font_size;
       background: #cfe2e4;
@@ -12,10 +11,6 @@ nav#taxonomies {
       padding-left: 20px;
       margin-bottom: 20px;
       list-style: none;
-      border: 1px solid lighten($body_text_color, 60);
-      border-collapse: collapse;
-
-
       li {
         a {
           font-size: $main_navigation_font_size;
@@ -30,8 +25,8 @@ nav#top-nav-bar {
 
 #news {
   /*padding-top: 20px;*/
-  border: 1px solid lighten($body_text_color, 30);
-  height: 400px;
+  border: 1px solid lighten($body_text_color, 60);
+  /*height: 400px;*/
 }
 .tema {
   text-transform: uppercase;
@@ -50,6 +45,3 @@ span.price {
       font-weight: bold;
     }
   }
-#info {
-  border: 1px solid lighten($body_text_color, 30);
-}

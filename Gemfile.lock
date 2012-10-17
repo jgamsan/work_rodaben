@@ -21,7 +21,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_i18n.git
-  revision: c0f0e9b98245a05662f393a9f98599b5b93155be
+  revision: b4abb903fe84f4c4619f987b641addce43defbd3
   specs:
     spree_i18n (1.0.0)
       i18n (~> 0.5)
@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_news.git
-  revision: 2741a1ceed6976805c7a153efd1fdd9d72962402
+  revision: 7b1952597f06b1b509eb9b1c49101c2e8bd67db0
   specs:
     spree_news (0.0.5)
       haml
@@ -245,7 +245,7 @@ GEM
       ntlm-http (~> 0.1, >= 0.1.1)
       webrobots (~> 0.0, >= 0.0.9)
     method_locator (0.0.4)
-    method_source (0.8)
+    method_source (0.8.1)
     methodfinder (1.2.5)
     mime-types (1.19)
     money (5.0.0)

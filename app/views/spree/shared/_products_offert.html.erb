@@ -6,17 +6,18 @@
   <%= t(:no_products_found) %>
 <% end %>
 <% if products.any? %>
-  <table class="products">
+  <table class="index">
     <tr>
       <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Nombre</th>
+      <th>Marca</th>
+      <th>Precio</th>
+      <th>Caracteristicas</th>
     </tr>
     <% products.each do |product| -%>
       <tr>
         <td><%= link_to mini_image(product, :itemprop => "image"), product, :itemprop => 'url' %></td>
-        <td><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %> <br> <%= product.calculate_tires(product.id) %></td>
+        <td><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %></td>
         <td><%= product.taxons.where(:parent_id => 2).first.name %></td>
         <td>
           <% if (product.price - product.price_in_offert) < 0 %>
@@ -30,6 +31,7 @@
             </span>
           <% end %>
         </td>
+        <td><%= product.calculate_tires(product.id) %></td>
       </tr>
     <% end -%>
   </table>

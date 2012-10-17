@@ -13,6 +13,7 @@
 //= require_tree .
 //= require store/spree_workshop
 //= require store/spree_addings_for_rodaben
+//= require store/spree_news
 
 $(function() {
   // when the #country field changes
@@ -26,4 +27,13 @@ $(function() {
     return false;
   });
 });
-//= require store/spree_news
+
+$(function() {
+  $('#news-container').vTicker({
+    speed: 1000,
+    pause: 4000,
+    animation: 'fade',
+    mousePause: true,
+    showItems: 1
+  });
+});
