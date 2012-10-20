@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: f952abdff36864bb1fe7ce54eeb893b95fe1ab88
+  revision: f3c123b1b0c8c66013ff01fc67a40628f77bd9b4
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: b0b4fd4f5aa6749b9b8939714c77c6cdb3828b7e
+  revision: 232e81a9d29b0e741e5bd040c42c60c51a157d0e
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_news.git
-  revision: 2741a1ceed6976805c7a153efd1fdd9d72962402
+  revision: 7b1952597f06b1b509eb9b1c49101c2e8bd67db0
   specs:
     spree_news (0.0.5)
       haml
@@ -149,7 +149,7 @@ GEM
       capistrano
     chronic (0.6.7)
     clipboard (1.0.1)
-    cocaine (0.4.0)
+    cocaine (0.4.2)
     coderay (1.0.8)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -257,7 +257,7 @@ GEM
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
     net-http-digest_auth (1.2.1)
-    net-http-persistent (2.7)
+    net-http-persistent (2.8)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
