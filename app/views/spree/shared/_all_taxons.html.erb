@@ -5,4 +5,9 @@
   <% end %>
   <h6 class='taxonomy-root'><%= t(:shop_by_taxonomy, :taxonomy => "Marca") %></h6>
   <%= select_tag "marcas", options_from_collection_for_select(Spree::Taxon.where(:parent_id => 2), "id", "name") %>
+  <br />
+  <h6 class='taxonomy-root' style="margin-top:50px;">Ultimas Noticias</h6>
+  <div class="row" id="news">
+    <%= render :partial => "spree/shared/news" %>
+  </div>
 </nav>
