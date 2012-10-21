@@ -35,13 +35,19 @@ nav#top-nav-bar {
 }
 
 span.price {
-    font-weight: bold;
-    color: $link_text_color;
+  font-weight: bold;
+  color: $link_text_color;
 
-    &.selling {
-      font-size: $product_detail_title_font_size;
-    }
-    &.diff {
-      font-weight: bold;
-    }
+  &.selling {
+    font-size: $product_detail_title_font_size;
   }
+  &.diff {
+    font-weight: bold;
+  }
+}
+.title_search {
+  background: black;
+  color: yellow;
+  font-size: $product_detail_title_font_size;
+  border: 1px outset lighten($body_text_color, 60);
+}

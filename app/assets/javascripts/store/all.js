@@ -37,3 +37,16 @@ $(function() {
     showItems: 1
   });
 });
+
+$(function() {
+  // when the #country field changes
+  $("select#search_vehicle").live("change", function() {
+    // make a POST call and replace the content
+    var vehicle = $('select#search_vehicle :selected').val().toLowerCase();
+    if(vehicle == "") vehicle="0";
+    $.get('/choose_vehicle/' + vehicle, function(data){
+      $("#searchTyres").html(data);
+    });
+    return false;
+  });
+});
