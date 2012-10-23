@@ -51,3 +51,16 @@ span.price {
   font-size: $product_detail_title_font_size;
   border: 1px outset lighten($body_text_color, 60);
 }
+.container {
+  box-shadow: 10px 10px 5px rgb(136, 136, 136);
+  border-radius: 0px 0px 40px 40px;
+}
+nav#taxonomies .taxonomy-root {
+  margin: 0px;
+  font-size: 16px;
+  color: rgb(254, 215, 0);
+  background: none repeat scroll 0% 0% rgb(53, 53, 53);
+  padding: 5px;
+  text-align: center;
+  border-radius: 15px 0px 15px 0px;
+}
