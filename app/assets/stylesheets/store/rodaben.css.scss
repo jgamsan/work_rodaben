@@ -13,7 +13,7 @@ nav#taxonomies {
       list-style: none;
       li {
         a {
-          font-size: $main_navigation_font_size;
+          font-size: 16px;
         }
       }
     }
@@ -22,6 +22,26 @@ nav#top-nav-bar {
     text-align: right;
     margin-top: 10px;
     }
+
+ul#main-nav-bar {
+  list-style:none;
+  padding:0;
+  margin:20px 0 10px 0;
+  width:100%;
+  li {
+    a {text-decoration:none;
+    font-size: 14px;
+    color:white;
+    background:#353535;
+    float:left;
+    display:block;
+    width:130px;
+    height:30px;
+    padding:10px 0 10px 10px;
+    text-align: center;
+    }
+  }
+}
 
 #news {
   /*padding-top: 20px;*/
@@ -63,4 +83,10 @@ nav#taxonomies .taxonomy-root {
   padding: 5px;
   text-align: center;
   border-radius: 15px 0px 15px 0px;
+}
+li.category {
+  list-style:none;margin:5px 0 0 0;padding:0 12px;
+  border-bottom:1px solid #cccccc; margin-bottom:7px;
+    a {text-decoration:none; color:black}
+    a:hover {text-decoration:underline; border-left:5px solid red; padding-left:5px;}
 }
