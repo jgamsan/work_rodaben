@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: ad164c8bd60642f4243df476934519c80ed6df63
+  revision: 5ce5902444790615b174a14cc07dac500f6f7ee7
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -390,7 +390,7 @@ GEM
     treetop (1.4.11)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.33)
+    tzinfo (0.3.34)
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)

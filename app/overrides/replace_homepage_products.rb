@@ -8,7 +8,6 @@ Deface::Override.new(:virtual_path => %q{spree/home/index},
               <%= render :partial => "spree/shared/banner", :locals => { :cycle_images => @cycle_images } %>
             </div>
             <div id="offerts" class="row" data-hook="products_in_offert">
-      <h3 style="text-align:center;">Listado de Productos en Oferta</h3>
       <%= render :partial => 'spree/shared/products_offert', :locals => { :products => @products } %>
     </div>
   </div>})

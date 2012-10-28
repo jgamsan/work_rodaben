@@ -6,20 +6,14 @@
   <%= t(:no_products_found) %>
 <% end %>
 <% if products.any? %>
-  <table class="index">
-    <tr>
-      <th></th>
-      <th>Nombre</th>
-      <th>Marca</th>
-      <th>Precio</th>
-      <th>Caracteristicas</th>
-    </tr>
-    <% products.each do |product| -%>
-      <tr>
-        <td><%= link_to mini_image(product, :itemprop => "image"), product, :itemprop => 'url' %></td>
-        <td><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %></td>
-        <td><%= product.taxons.where(:parent_id => 2).first.name %></td>
-        <td>
+  <% products.each do |product| -%>
+    <div class="oferta">
+      <%= link_to product_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+      <div class="texto_oferta">
+        <h3>OFERTA ESPECIAL</h3>
+        <h4><%= product.taxons.where(:parent_id => 2).first.name %></h4>
+        <h3><%= product.calculate_tires(product.id) %></h3>
+        <p class="precio_oferta">
           <% if (product.price - product.price_in_offert) < 0 %>
             <span class="price selling" style="color:red">
             <%= product.display_price %></span>
@@ -30,11 +24,11 @@
             <%= product.display_price %>
             </span>
           <% end %>
-        </td>
-        <td><%= product.calculate_tires(product.id) %></td>
-      </tr>
-    <% end -%>
-  </table>
+        </p>
+        <p class="iva_oferta">I.V.A. Incluído</p>
+      </div>
+    </div>
+  <% end -%>
 <% end -%>
 
 

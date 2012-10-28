@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121016172309) do
+ActiveRecord::Schema.define(:version => 20121028093530) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -557,15 +557,17 @@ ActiveRecord::Schema.define(:version => 20121016172309) do
 
   create_table "spree_tire_innertubes", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at",                                                :null => false
-    t.datetime "updated_at",                                                :null => false
+    t.datetime "created_at",                                                 :null => false
+    t.datetime "updated_at",                                                 :null => false
     t.decimal  "sale_price", :precision => 6, :scale => 2, :default => 0.0
+    t.boolean  "is_mm",                                    :default => true
   end
 
   create_table "spree_tire_serials", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.boolean  "is_mm",      :default => true
   end
 
   create_table "spree_tire_speed_codes", :force => true do |t|
@@ -576,8 +578,9 @@ ActiveRecord::Schema.define(:version => 20121016172309) do
 
   create_table "spree_tire_widths", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.boolean  "is_mm",      :default => true
   end
 
   create_table "spree_tokenized_permissions", :force => true do |t|
