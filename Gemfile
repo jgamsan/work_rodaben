@@ -57,7 +57,7 @@ end
 gem 'spree', '1.2.0'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
-gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise'
+gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :ref => "eb0f30380d"
 gem 'spree_i18n', :git => 'git://github.com/jgamsan/spree_i18n.git'
 gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
 gem "spree_addings_for_rodaben", :git => "git://github.com/jgamsan/spree_addings_for_rodaben.git"

@@ -13,6 +13,7 @@
         <h3>OFERTA ESPECIAL</h3>
         <h4><%= product.taxons.where(:parent_id => 2).first.name %></h4>
         <h3><%= product.calculate_tires(product.id) %></h3>
+        <h5><%= product.name.upcase %></h5>
         <p class="precio_oferta">
           <% if (product.price - product.price_in_offert) < 0 %>
             <span class="price selling" style="color:red">
