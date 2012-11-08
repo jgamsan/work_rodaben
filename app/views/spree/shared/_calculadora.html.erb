@@ -1,7 +1,7 @@
 <%= label_tag "Europeo", nil %>
 <%= radio_button_tag 'calc', nil, true %>
 <%= label_tag "Americano", nil %>
-<%= radio_button_tag 'calc', nil %>
+<%= radio_button_tag 'calc', nil, false, :disabled => true %>
 <br />
 
 <%= form_tag calc_equivalents_calc_tires_path, :method => :get, :remote => true do -%>
