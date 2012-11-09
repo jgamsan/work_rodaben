@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: df289d2b829287c0ff1c702157415f4fa6fc8096
+  revision: b301bd696c3527aeffaff4631b55ea3480201ad9
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
