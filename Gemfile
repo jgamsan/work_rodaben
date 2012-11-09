@@ -31,7 +31,7 @@ gem 'rails-i18n'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'devise-i18n'
 gem 'mechanize'
-gem 'whenever', :require => false
+gem 'whenever', '~> 0.7.3', :require => false
 group :development do
   gem 'capistrano'
   gem 'capistrano-unicorn', :require => false

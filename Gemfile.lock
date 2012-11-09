@@ -148,7 +148,7 @@ GEM
       net-ssh-gateway (>= 1.1.0)
     capistrano-unicorn (0.1.6)
       capistrano
-    chronic (0.8.0)
+    chronic (0.6.7)
     clipboard (1.0.1)
     cocaine (0.4.2)
     coderay (1.0.8)
@@ -412,9 +412,9 @@ GEM
       httpi (~> 1.0)
       nokogiri (>= 1.4.0)
     webrobots (0.0.13)
-    whenever (0.8.0)
+    whenever (0.7.3)
       activesupport (>= 2.3.4)
-      chronic (>= 0.6.3)
+      chronic (~> 0.6.3)
     wirb (0.4.2)
     zucker (12.1)
 
@@ -457,4 +457,4 @@ DEPENDENCIES
   turbo-sprockets-rails3
   uglifier (>= 1.0.3)
   unicorn
-  whenever
+  whenever (~> 0.7.3)
