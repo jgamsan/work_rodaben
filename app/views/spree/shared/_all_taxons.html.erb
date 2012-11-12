@@ -9,7 +9,7 @@
 
   <h6 class='taxonomy-root'><%= t(:shop_by_taxonomy, :taxonomy => "Marca") %></h6>
   <div style="padding-left:20px;padding-top:15px;">
-    <%= select_tag "marcas", options_from_collection_for_select(Spree::Taxon.where(:parent_id => 2), "id", "name") %>
+    <%= select_tag "marcas", options_from_collection_for_select(Spree::Taxon.where(:parent_id => 2).order("name ASC"), "id", "name") %>
   </div>
   <h6 class='taxonomy-root' style="margin-top:50px;">Ultimas Noticias</h6>
   <div class="row" id="news">

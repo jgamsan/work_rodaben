@@ -14,3 +14,14 @@
 //= require admin/spree_workshop
 //= require admin/spree_addings_for_rodaben
 //= require admin/spree_news
+
+$(function () {
+    $('input#check_all').live("change", function() {
+      var checkboxes = $(this).closest('table').find('td').find(':checkbox');
+      if($(this).is(':checked')) {
+        checkboxes.attr('checked', 'checked');
+      } else {
+        checkboxes.removeAttr('checked');
+      }
+  });
+});
