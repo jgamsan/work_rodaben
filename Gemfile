@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -18,6 +18,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'turbo-sprockets-rails3'
+  gem 'bootstrap-sass'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
@@ -55,10 +56,10 @@ end
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '1.2.0'
+gem 'spree', :github => "spree/spree", :branch => "1-2-stable"
 gem 'spree_usa_epay'
 gem 'spree_skrill'
-gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :ref => "eb0f30380d"
+gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise'
 gem 'spree_i18n', :git => 'git://github.com/jgamsan/spree_i18n.git'
 gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
 gem "spree_addings_for_rodaben", :git => "git://github.com/jgamsan/spree_addings_for_rodaben.git"

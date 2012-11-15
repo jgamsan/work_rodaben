@@ -7,13 +7,12 @@
 //= require jquery
 //= require jquery_ujs
 
-//= require store/spree_core
-//= require store/spree_promo
-//= require store/spree_cycle
 //= require_tree .
 //= require store/spree_workshop
 //= require store/spree_addings_for_rodaben
 //= require store/spree_news
+//= require bootstrap
+
 
 $(function() {
   // when the #country field changes

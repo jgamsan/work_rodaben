@@ -1,7 +1,7 @@
-set :application, "rodaben"
+set :application, "neumaticos"
 set :domain, "mail.galiclick.com"
 set :user, "galiclick"
-set :repository, "git@github.com:jgamsan/rodaben.git"
+set :repository, "git@github.com:jgamsan/work_rodaben.git"
 set :scm, :git
 set :keep_releases, 2
 set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")

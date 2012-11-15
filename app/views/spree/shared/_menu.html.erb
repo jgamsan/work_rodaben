@@ -1,0 +1,25 @@
+<div class="menu">
+  <ul id="myTab">
+    <li><a href="#coches" onclick="hideBox('cuerpo_coche'); return false;" data-toggle="tab"><div id="coche"></div></a></li>
+    <li><a href="#motos" onclick="hideBox('cuerpo_moto'); return false;" data-toggle="tab"><div id="moto"></div></a></li>
+    <li><a href="#taller" onclick="hideBox('cuerpo_taller'); return false;" data-toggle="tab"><div id="talleres"></div></a></li>
+    <li><a href="#carritos" data-toggle="tab"><div id="carrito"></div></a></li>
+  </ul>
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane" id="coches">
+      <%= render :partial => 'spree/shared/search_tyres_cars' %>
+    </div>
+    <div class="tab-pane" id="motos">
+      <%= render :partial => 'spree/shared/search_tyres_motos' %>
+    </div>
+    <div class="tab-pane" id="taller"><h4>Mas contenido en la pagina</h4></div>
+    <div class="tab-pane" id="carritos"><h3>Prueba de contenido</h3></div>
+  </div>
+</div>
+
+<script type="text/javascript"><!--
+function hideBox(boxName) {
+  document.getElementById("cuerpo_de_coche").className = boxName;
+}
+//-->
+</script>
