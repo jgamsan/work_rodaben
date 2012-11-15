@@ -1,4 +1,4 @@
-wd = "/home/galiclick/public_html/rodaben/current"
+wd = "/home/galiclick/public_html/neumaticos/current"
 working_directory wd
 pid "#{wd}/tmp/pids/unicorn.pid"
 stderr_path "#{wd}/log/unicorn.log"
@@ -23,4 +23,3 @@ end
 after_fork do |server, worker|
   ActiveRecord::Base.establish_connection
 end
-
