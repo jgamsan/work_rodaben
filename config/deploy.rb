@@ -26,7 +26,7 @@ end
 
 namespace :customs do
   task :symlink, :roles => :app do
-    run "ln -nfs #{shared_path}/system/spree #{release_path}/public"
+    run "ln -nfs /home/galiclick/pubic_html/rodaben/shared/system/spree #{release_path}/public"
     run "ln -nfs #{shared_path}/system/products #{release_path}/vendor"
   end
 end
