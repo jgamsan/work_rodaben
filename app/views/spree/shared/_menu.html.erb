@@ -12,7 +12,34 @@
     <div class="tab-pane" id="motos">
       <%= render :partial => 'spree/shared/search_tyres_motos' %>
     </div>
-    <div class="tab-pane" id="taller"><h4>Mas contenido en la pagina</h4></div>
+    <div class="tab-pane" id="taller">
+      <h1>Gestion de Talleres</h1>
+
+      <br />
+      <%= form_tag search_workshops_path, :method => 'get', :remote => true, :class => "form-inline" do %>
+        <%= select_tag "Provincia", options_from_collection_for_select(Spree::State.where(:country_id => 188), "id", "name"), :class => "styled-select workshop"%>
+        <%= submit_tag "Buscar", :name => nil, :class => "btn btn-primary" %>
+      <% end -%>
+      <%= link_to 'Alta Taller', new_workshop_url, :class => "btn btn-primary" %>
+      <% unless @workshops.nil? -%>
+        <table class="index">
+          <tr>
+            <th><%= t('spree.workshops.form.name') %></th>
+            <th><%= t('spree.workshops.form.address') %></th>
+            <th><%= t('spree.workshops.form.town') %></th>
+            <th><%= t('spree.workshops.form.price_for_car') %></th>
+            <th><%= t('spree.workshops.form.price_for_moto') %></th>
+          </tr>
+          <tbody id="list">
+            <%= render :partial => "spree/workshops/workshop", :object => @workshops %>
+          </tbody>
+        </table>
+        <div id="paginator" class="pagination">
+          <%= paginate @workshops, :remote => true %>
+        </div>
+      <% end -%>
+
+    </div>
     <div class="tab-pane" id="carritos"><h3>Prueba de contenido</h3></div>
   </div>
 </div>

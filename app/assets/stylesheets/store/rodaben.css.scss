@@ -195,18 +195,36 @@ html {
   font-size: 12px;
 }
 
-span.price {
-    font-weight: bold;
-    color: #00ADEE;
-
-    &.selling {
-      font-size: 20px;
-    }
-    &.diff {
-      font-weight: bold;
-    }
-  }
-  .search {
+.search {
   float:left;
   margin-top: 100px;
-  }
+}
+
+.styled-select {
+   width: 130px;
+   padding: 5px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   height: 34px;
+   overflow: hidden;
+   background: url(../down_arrow_select.jpg) no-repeat right #babdb6;
+   &.workshop {
+     width: 200px;
+   }
+}
+
+.styled-label label {
+  font-size: 16px;
+  height: 34px;
+}
+
+.price {
+  font-size: 16px;
+  margin-top:10px;
+}
+
+.btn-cart {
+  font-size: 18px;
+  margin-top:30px;
+  padding-top: 4px;
+}
