@@ -1,0 +1,20 @@
+<div id="registration" data-hook>
+  <div class="row">
+    <div id="account" class="span8">
+      <!-- TODO: add partial with registration form -->
+    </div>
+    <% if Spree::Config[:allow_guest_checkout] %>
+      <div id="guest_checkout" data-hook class="span8">
+        <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
+        <h1><%= t(:guest_user_account) %></h1>
+        <%= form_for @order, :url => update_checkout_registration_path, :method => :put, :html => { :id => 'checkout_form_registration' } do |f| %>
+          <p>
+            <%= f.label :email, t(:email) %>
+            <%= f.email_field :email, :class => 'title' %>
+          </p>
+          <p><%= f.submit t(:continue), :class => 'btn btn-primary' %></p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

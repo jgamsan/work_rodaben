@@ -1,0 +1,21 @@
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Remove</th>
+      <th>Image</th>
+      <th><%= t(:item) %></th>
+      <th><%= t(:sku) %></th>
+      <th><%= t(:qty) %></th>
+      <th><%= t(:price) %></th>
+      <th><%= t(:total) %></th>
+      <th class="cart-item-delete-header"></th>
+    </tr>
+  </thead>
+  <tbody id="line_items" data-hook>
+    <%= order_form.fields_for :line_items do |item_form| %>
+      <%= render :partial => 'line_item', :locals => { :variant => item_form.object.variant, :line_item => item_form.object, :item_form => item_form } %>
+    <% end %>
+  </tbody>
+  <%= render "spree/orders/adjustments" unless @order.adjustments.eligible.blank? %>
+</table>

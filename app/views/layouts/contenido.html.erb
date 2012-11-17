@@ -1,0 +1,31 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="en" style="background:white;"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render :partial => 'spree/shared/head' %>
+  </head>
+  <body>
+    <div id="contenido_principal">
+      <div id="banner">
+        <div id="inicio_sesion"><!--insertar inicio sesi—n--></div>
+          <div class="social">
+            <ul>
+              <li><a href="http://twitter.com/NeuCoche"><div id="social_twitter"></div></a></li>
+              <li><a href="http://facebook.com/neumaticosdecochecom"><div id="social_facebook"></div></a></li>
+            </ul>
+          </div>
+      </div>
+      <div id="contenido">
+        <%= yield %>
+      </div>
+      <div id="pie">
+        <div class="pie_class">
+          <%= render :partial => 'spree/shared/footer' %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -3,7 +3,7 @@
     <li><a href="#coches" onclick="hideBox('cuerpo_coche'); return false;" data-toggle="tab"><div id="coche"></div></a></li>
     <li><a href="#motos" onclick="hideBox('cuerpo_moto'); return false;" data-toggle="tab"><div id="moto"></div></a></li>
     <li><a href="#taller" onclick="hideBox('cuerpo_taller'); return false;" data-toggle="tab"><div id="talleres"></div></a></li>
-    <li><a href="#carritos" data-toggle="tab"><div id="carrito"></div></a></li>
+    <li><div id="carrito" class ="cuerpo_carrito"><%= link_to_cart %></div></li>
   </ul>
   <div id="myTabContent" class="tab-content">
     <div class="tab-pane" id="coches">
