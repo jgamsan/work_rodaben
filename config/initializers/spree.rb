@@ -12,6 +12,7 @@ Spree.config do |config|
   config.default_country_id = 188
   config.logo = "logo.png"
   config.prices_inc_tax = true
+  config.default_locale = :es
   config.show_zero_stock_products = false
   config.max_level_in_taxons_menu = 2
   config.currency = "EUR"
