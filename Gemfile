@@ -33,7 +33,7 @@ gem 'css3-progress-bar-rails'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'devise-i18n'
 gem 'mechanize'
-gem 'whenever'
+gem 'whenever', :require => false
 group :development do
   gem 'capistrano'
   gem 'capistrano-unicorn', :require => false

@@ -66,21 +66,21 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 6767ce6a9634cb4dc59fa58f7f40680216d79608
+  revision: 9a8f32c9109b9b7138362b29338b4dfafb4b165c
   branch: 1-2-stable
   specs:
-    spree (1.2.0)
-      spree_api (= 1.2.0)
-      spree_cmd (= 1.2.0)
-      spree_core (= 1.2.0)
-      spree_dash (= 1.2.0)
-      spree_promo (= 1.2.0)
-      spree_sample (= 1.2.0)
-    spree_api (1.2.0)
-      spree_core (= 1.2.0)
-    spree_cmd (1.2.0)
+    spree (1.2.3.beta)
+      spree_api (= 1.2.3.beta)
+      spree_cmd (= 1.2.3.beta)
+      spree_core (= 1.2.3.beta)
+      spree_dash (= 1.2.3.beta)
+      spree_promo (= 1.2.3.beta)
+      spree_sample (= 1.2.3.beta)
+    spree_api (1.2.3.beta)
+      spree_core (= 1.2.3.beta)
+    spree_cmd (1.2.3.beta)
       thor (>= 0.14.6)
-    spree_core (1.2.0)
+    spree_core (1.2.3.beta)
       activemerchant (= 1.28.0)
       acts_as_list (= 0.1.4)
       awesome_nested_set (= 2.1.4)
@@ -99,17 +99,17 @@ GIT
       select2-rails (~> 3.0)
       state_machine (= 1.1.2)
       stringex (~> 1.3.2)
-    spree_dash (1.2.0)
+    spree_dash (1.2.3.beta)
       httparty (~> 0.8.1)
-      spree_core (= 1.2.0)
-    spree_promo (1.2.0)
-      spree_core (= 1.2.0)
-    spree_sample (1.2.0)
-      spree_core (= 1.2.0)
+      spree_core (= 1.2.3.beta)
+    spree_promo (1.2.3.beta)
+      spree_core (= 1.2.3.beta)
+    spree_sample (1.2.3.beta)
+      spree_core (= 1.2.3.beta)
 
 GIT
   remote: git://github.com/spree/spree_auth_devise
-  revision: 7f8daab983158f34d337b2fe0e5d68e4d3bedc26
+  revision: ece3df3e14d45c98a06613e2000b20d326dd51e0
   specs:
     spree_auth_devise (1.0.0)
       cancan (= 1.6.7)
@@ -118,7 +118,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_paypal_express.git
-  revision: ca60407d5d95f3b50f72a73f81a5d3427340bf30
+  revision: e7f3e3f4ad867cd069e6c556bd256ec1504b6967
   specs:
     spree_paypal_express (1.2.0)
       spree_core (~> 1.2)
