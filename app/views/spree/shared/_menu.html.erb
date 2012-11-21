@@ -6,10 +6,12 @@
     <li><div id="carrito" class ="cuerpo_carrito"><%= link_to_cart %></div></li>
   </ul>
   <div id="myTabContent" class="tab-content">
-    <div class="tab-pane" id="coches">
+    <div class="tab-pane active" id="coches">
+      <h1>Busqueda Neumaticos Automovil</h1>
       <%= render :partial => 'spree/shared/search_tyres_cars' %>
     </div>
     <div class="tab-pane" id="motos">
+      <h1>Busqueda Neumaticos Moto</h1>
       <%= render :partial => 'spree/shared/search_tyres_motos' %>
     </div>
     <div class="tab-pane" id="taller">

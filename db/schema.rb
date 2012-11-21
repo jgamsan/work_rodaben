@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121028093530) do
+ActiveRecord::Schema.define(:version => 20121119105560) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -107,6 +107,7 @@ ActiveRecord::Schema.define(:version => 20121028093530) do
     t.string  "iso3"
     t.string  "name"
     t.integer "numcode"
+    t.boolean "states_required", :default => true
   end
 
   create_table "spree_credit_cards", :force => true do |t|
@@ -253,7 +254,6 @@ ActiveRecord::Schema.define(:version => 20121028093530) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.datetime "deleted_at"
-    t.string   "display_on"
   end
 
   create_table "spree_payments", :force => true do |t|
@@ -293,9 +293,6 @@ ActiveRecord::Schema.define(:version => 20121028093530) do
   end
 
   create_table "spree_preferences", :force => true do |t|
-    t.string   "name"
-    t.integer  "owner_id"
-    t.string   "owner_type"
     t.text     "value"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -335,9 +332,10 @@ ActiveRecord::Schema.define(:version => 20121028093530) do
     t.integer  "shipping_category_id"
     t.datetime "created_at",                              :null => false
     t.datetime "updated_at",                              :null => false
-    t.integer  "count_on_hand",        :default => 0,     :null => false
+    t.integer  "count_on_hand",        :default => 0
     t.integer  "supplier_id"
     t.boolean  "show_in_offert",       :default => false
+    t.boolean  "on_demand",            :default => false
   end
 
   add_index "spree_products", ["available_on"], :name => "index_spree_products_on_available_on"
@@ -520,12 +518,14 @@ ActiveRecord::Schema.define(:version => 20121028093530) do
   end
 
   create_table "spree_tax_rates", :force => true do |t|
-    t.decimal  "amount",            :precision => 8, :scale => 5
+    t.decimal  "amount",             :precision => 8, :scale => 5
     t.integer  "zone_id"
     t.integer  "tax_category_id"
-    t.datetime "created_at",                                                         :null => false
-    t.datetime "updated_at",                                                         :null => false
-    t.boolean  "included_in_price",                               :default => false
+    t.datetime "created_at",                                                          :null => false
+    t.datetime "updated_at",                                                          :null => false
+    t.boolean  "included_in_price",                                :default => false
+    t.string   "name"
+    t.boolean  "show_rate_in_label",                               :default => true
   end
 
   create_table "spree_taxonomies", :force => true do |t|
@@ -649,7 +649,7 @@ ActiveRecord::Schema.define(:version => 20121028093530) do
     t.datetime "deleted_at"
     t.boolean  "is_master",                                        :default => false
     t.integer  "product_id"
-    t.integer  "count_on_hand",                                    :default => 0,     :null => false
+    t.integer  "count_on_hand",                                    :default => 0
     t.decimal  "cost_price",         :precision => 8, :scale => 2
     t.integer  "position"
     t.integer  "tire_width_id"
@@ -660,6 +660,8 @@ ActiveRecord::Schema.define(:version => 20121028093530) do
     t.decimal  "price_in_offert",    :precision => 8, :scale => 2, :default => 0.0
     t.boolean  "tire_gr"
     t.boolean  "tire_rf"
+    t.integer  "lock_version",                                     :default => 0
+    t.boolean  "on_demand",                                        :default => false
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"

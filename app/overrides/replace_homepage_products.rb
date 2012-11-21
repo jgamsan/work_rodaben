@@ -4,7 +4,8 @@ Deface::Override.new(:virtual_path => %q{spree/home/index},
                           :closing_selector => %q{},
                           :text => %q{
             <div data-hook="homepage_products">
-            <div id="offerts" class="row" data-hook="products_in_offert">
+            <div id="offerts" class="row offert" data-hook="products_in_offert">
+      <h2> Neumaticos en Oferta </h2>
       <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
     </div>
   </div>})

@@ -40,7 +40,7 @@ html {
 .social ul{
   width: 100px;
   height: 50px;
-  margin: 115px 45px;
+  margin: 115px -315px;
   list-style: none;
   float: right;
 }
@@ -136,6 +136,8 @@ html {
     height: 800px;
     background: url(../contenido.png) no-repeat;
     float: left;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 #carrito{
@@ -204,26 +206,26 @@ html {
 }
 
 .search {
-  float:left;
-  margin-top: 100px;
+  float:right;
+  margin-top: 20px;
+  & select, input, button {
+    font-size: 11px;
+  }
+
 }
 
 .styled-select {
-   width: 130px;
    padding: 5px;
-   font-size: 16px;
+   font-size: 12px;
    border: 1px solid #ccc;
-   height: 34px;
-   overflow: hidden;
-   background: url(../down_arrow_select.jpg) no-repeat right #babdb6;
+   background: #babdb6;
    &.workshop {
      width: 200px;
    }
 }
 
 .styled-label label {
-  font-size: 16px;
-  height: 34px;
+  font-size: 12px;
 }
 
 .price {
@@ -241,4 +243,133 @@ a.full {
   font-weight: bold;
   color: gold;
   margin-left: 40px;
+}
+.offert {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.news {
+  font-size: 14px;
+}
+
+  /*--------------------------------------*/
+  /* Checkout
+  /*--------------------------------------*/
+
+$body_text_color:           #404042 !default;
+$link_text_color:           #00ADEE !default;
+$base_font_size:            12px !default;
+  .progress-steps {
+    list-style: decimal inside;
+    overflow: auto;
+
+    li {
+      float: left;
+      margin-right: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 5px 20px;
+      color: lighten($body_text_color, 20);
+
+      &.current-first, &.current {
+        background-color: $link_text_color;
+        color: #FFFFFF;
+      }
+
+      &.completed-first, &.completed {
+        background-color: lighten($body_text_color, 60);
+        color: #FFFFFF;
+
+        a {
+          color: #FFFFFF;
+        }
+
+        &:hover {
+          background-color: $link_text_color;
+          color: #FFFFFF;
+
+          a {
+            color: #FFFFFF;
+
+            &:hover {
+              color: #FFFFFF !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+//#order_details, #order_summary {
+//    padding: 0;
+
+//    div:last-child {
+//      margin-left: -1px;
+//    }
+
+//    .payment-info {
+//      .cc-type {
+//        img {
+//          vertical-align: middle;
+//        }
+//      }
+//    }
+
+//    td.price, td.total {
+//      span {
+//        @extend span.price;
+//      }
+//    }
+
+//    table tfoot {
+//      text-align: right;
+//      color: lighten($body_text_color, 20);
+
+//      tr {
+//        border: none;
+//      }
+
+//      &#order-total {
+//        text-transform: uppercase;
+//        font-size: $base_font_size + 4;
+//        color: $body_text_color;
+
+//        tr {
+//          border-top: 1px solid lighten($body_text_color, 60);
+
+//          td {
+//            padding: 10px;
+//          }
+//        }
+//      }
+//    }
+//  }
+#checkout-summary {
+    text-align: center;
+    border: 1px solid lighten($body_text_color, 60);
+    margin-top: -10px;
+    margin-left: 0;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: $base_font_size + 2;
+      border-bottom: 1px solid lighten($body_text_color, 60);
+    }
+
+    table {
+      width: 100%;
+
+      tr[data-hook="order_total"] {
+        border-bottom: none;
+      };
+
+      #summary-order-total {
+        font-size: $base_font_size + 2;
+      }
+    }
+  }
+#ship {
+  visibility: visible;
 }

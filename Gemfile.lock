@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 05cbd6e66800e0de1e8b1c772a700ba1afd73c88
+  revision: de3ad9cc4ff6e2fef3b6cb2e1f0bd7c2d617b3d9
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: bcd18cd1ad7236d8705a5a64b19d650dcb4d3fbb
+  revision: 2409b41b1156aeb0ef91796feae6f57cc648737f
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_search_rodaben.git
-  revision: 57320945361e34008f6bf2d557e2a99f88210305
+  revision: f97dccef758dad4ad2963bdfafd42d23b99e3d29
   specs:
     spree_search_rodaben (1.1.1)
       spree_core (>= 1.0.0)
@@ -59,14 +59,14 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_workshop.git
-  revision: 71e17ee16e2d6f8f9214a5aa740d229c1206c539
+  revision: cc6e8223d9a20c1dd014b8a8b0cc49500d831f0a
   specs:
     spree_workshop (1.2.0)
-      spree_core (~> 1.2.0)
+      spree_core (>= 1.2.0)
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 80a8e5b477650c4a5605c5e0e1e420c2b8ed47d6
+  revision: 6767ce6a9634cb4dc59fa58f7f40680216d79608
   branch: 1-2-stable
   specs:
     spree (1.2.0)
@@ -179,7 +179,8 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass (2.1.1.0)
+    bootstrap-sass (2.2.1.1)
+      sass (~> 3.2)
     boson (1.2.4)
     builder (3.0.4)
     bullet (4.2.0)
@@ -193,7 +194,7 @@ GEM
       net-ssh-gateway (>= 1.1.0)
     capistrano-unicorn (0.1.6)
       capistrano
-    chronic (0.6.7)
+    chronic (0.8.0)
     clipboard (1.0.1)
     cocaine (0.4.2)
     coderay (1.0.8)
@@ -214,7 +215,7 @@ GEM
       orm_adapter (~> 0.0.3)
       railties (~> 3.1)
       warden (~> 1.1.1)
-    devise-i18n (0.5.10)
+    devise-i18n (0.5.11)
     domain_name (0.5.4)
       unf (~> 0.0.3)
     erubis (2.7.0)
@@ -353,7 +354,7 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     raindrops (0.10.0)
-    rake (10.0.1)
+    rake (10.0.2)
     ransack (0.7.0)
       actionpack (~> 3.0)
       activerecord (~> 3.0)
@@ -421,9 +422,9 @@ GEM
       httpi (~> 1.0)
       nokogiri (>= 1.4.0)
     webrobots (0.0.13)
-    whenever (0.7.3)
+    whenever (0.8.0)
       activesupport (>= 2.3.4)
-      chronic (~> 0.6.3)
+      chronic (>= 0.6.3)
     wirb (0.4.2)
     zucker (12.1)
 
@@ -435,7 +436,7 @@ DEPENDENCIES
   bullet
   capistrano
   capistrano-unicorn
-  coffee-rails (~> 3.2.1)
+  coffee-rails
   css3-progress-bar-rails
   devise-i18n
   foreman
@@ -449,7 +450,7 @@ DEPENDENCIES
   rails (= 3.2.9)
   rails-i18n
   rvm-capistrano
-  sass-rails (~> 3.2.3)
+  sass-rails
   spree!
   spree_addings_for_rodaben!
   spree_auth_devise!
@@ -468,4 +469,4 @@ DEPENDENCIES
   turbo-sprockets-rails3
   uglifier (>= 1.0.3)
   unicorn
-  whenever (~> 0.7.3)
+  whenever

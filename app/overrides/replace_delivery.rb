@@ -1,5 +1,5 @@
-Deface::Override.new(:virtual_path => %q{spree/checkout/_address},
-                          :name => %q{replace_address},
+Deface::Override.new(:virtual_path => %q{spree/checkout/_delivery},
+                          :name => %q{replace_delivery},
                           :replace => %q{[data-hook="buttons"]},
                           :text => %q{
       <div class="form-buttons" data-hook="buttons">

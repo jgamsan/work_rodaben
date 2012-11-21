@@ -4,11 +4,10 @@
     <%= select_tag :taxon,
           options_for_select([[t(:all_departments), '']] +
                                 @taxons.map {|t| [t.name, t.id]},
-                              @taxon ? @taxon.id : params[:taxon]) %>
+                              @taxon ? @taxon.id : params[:taxon]), :class => "span2" %>
     <div class="input-append">
       <%= search_field_tag :keywords, params[:keywords], :placeholder => t(:search), :class => "span2 search-query" %>
       <%= button_tag t(:search), :name => nil, :class => "btn btn-primary" %>
     </div>
-
   <% end %>
 </div>

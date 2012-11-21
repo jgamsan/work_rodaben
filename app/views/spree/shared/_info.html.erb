@@ -3,5 +3,7 @@
     <%= flash_messages %>
     <%= yield %>
   </div>
-  <div id="noticias"></div>
+  <div id="noticias">
+    <%= render :partial => 'spree/shared/news' %>
+  </div>
 </div>

@@ -1,18 +1,18 @@
 <%= form_tag products_path, :method => :get do -%>
   <%= select_tag :tire_width_id, options_for_select([[t(:width), '']] +
                 Spree::TireWidth.by_taxon(4).map {|t| [t.name, t.id]},
-                @width ? @width.id : params[:tire_width_id]), :class => "styled-select" %>
+                @width ? @width.id : params[:tire_width_id]), :class => "span2 styled-select" %>
   <%= select_tag :tire_serial_id, options_for_select([[t(:serial), '']] +
                   Spree::TireSerial.by_taxon(4).map {|t| [t.name, t.id]},
-                  @serial ? @serial.id : params[:tire_serial_id]), :class => "styled-select" %>
+                  @serial ? @serial.id : params[:tire_serial_id]), :class => "span2 styled-select" %>
   <%= select_tag :tire_innertube_id, options_for_select([[t(:innertube), '']] +
                   Spree::TireInnertube.by_taxon(4).map {|t| [t.name, t.id]},
-                  @innertube ? @innertube.id : params[:tire_innertube_id]), :class => "styled-select" %>
+                  @innertube ? @innertube.id : params[:tire_innertube_id]), :class => "span2 styled-select" %>
   <%= select_tag :tire_speed_code_id, options_for_select([[t(:speed_code), '']] +
                   Spree::TireSpeedCode.by_taxon(4).map {|t| [t.name, t.id]},
-                  @speed ? @speed.id : params[:tire_speed_code_id]), :class => "styled-select" %>
+                  @speed ? @speed.id : params[:tire_speed_code_id]), :class => "span2 styled-select" %>
   <%= select_tag :tire_season, options_for_select([[t(:tire_season), '']] +
-                    Spree::Variant::SEASON_OPTIONS), :class => "styled-select" %>
+                    Spree::Variant::SEASON_OPTIONS), :class => "span2 styled-select" %>
   <div class="styled-label">
     <%= label_tag nil, nil, :class => "checkbox inline" do %>
       <%= check_box_tag :tire_gr, t(:tire_gr) %>
