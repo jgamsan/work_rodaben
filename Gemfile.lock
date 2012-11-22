@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: de3ad9cc4ff6e2fef3b6cb2e1f0bd7c2d617b3d9
+  revision: a04cc383a685549d64e56f997c4cc6612c74f34f
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -59,14 +59,14 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_workshop.git
-  revision: cc6e8223d9a20c1dd014b8a8b0cc49500d831f0a
+  revision: 48b1053d409b8b4ab032b20c546cc7ff8f56e940
   specs:
     spree_workshop (1.2.0)
       spree_core (>= 1.2.0)
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 9a8f32c9109b9b7138362b29338b4dfafb4b165c
+  revision: 6c76e6166f43ca46313a617e662246970d97db8c
   branch: 1-2-stable
   specs:
     spree (1.2.3.beta)
@@ -109,7 +109,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_auth_devise
-  revision: ece3df3e14d45c98a06613e2000b20d326dd51e0
+  revision: b8de23d97f3ec417f9aad44ec0395240b782030c
   specs:
     spree_auth_devise (1.0.0)
       cancan (= 1.6.7)
@@ -308,7 +308,7 @@ GEM
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
       net-ssh (>= 2.0.9)
-    net-ssh (2.6.1)
+    net-ssh (2.6.2)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     nokogiri (1.5.5)
