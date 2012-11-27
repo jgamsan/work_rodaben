@@ -47,6 +47,21 @@ html {
 .social li a{
   float: right;
 }
+.social_contenido{
+  width: 980px;
+  height: 50px;
+}
+
+.social_contenido ul{
+    width: 100px;
+    height: 50px;
+    margin: 115px 45px;
+    list-style: none;
+    float: right;
+}
+.social_contenido li a{
+    float: right;
+}
 
 #social_twitter{
   width: 40px;
@@ -136,7 +151,7 @@ html {
     height: 800px;
     background: url(../contenido.png) no-repeat;
     float: left;
-    padding-left: 50px;
+    padding-left: 10px;
     padding-top: 50px;
 }
 
@@ -302,50 +317,7 @@ $base_font_size:            12px !default;
 
 
 
-//#order_details, #order_summary {
-//    padding: 0;
 
-//    div:last-child {
-//      margin-left: -1px;
-//    }
-
-//    .payment-info {
-//      .cc-type {
-//        img {
-//          vertical-align: middle;
-//        }
-//      }
-//    }
-
-//    td.price, td.total {
-//      span {
-//        @extend span.price;
-//      }
-//    }
-
-//    table tfoot {
-//      text-align: right;
-//      color: lighten($body_text_color, 20);
-
-//      tr {
-//        border: none;
-//      }
-
-//      &#order-total {
-//        text-transform: uppercase;
-//        font-size: $base_font_size + 4;
-//        color: $body_text_color;
-
-//        tr {
-//          border-top: 1px solid lighten($body_text_color, 60);
-
-//          td {
-//            padding: 10px;
-//          }
-//        }
-//      }
-//    }
-//  }
 #checkout-summary {
     text-align: center;
     border: 1px solid lighten($body_text_color, 60);

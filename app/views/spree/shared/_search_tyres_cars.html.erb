@@ -14,8 +14,8 @@
   <%= select_tag :marca, options_for_select([[t(:brand), '']] +
                   Spree::Taxon.by_car.map {|t| [t.name, t.id]},
                   @taxon ? @taxon.id : params[:marca]), :class => "span2 styled-select" %>
-   <% for vehiculo in Spree::Taxon.where(:parent_id => 3) %>
-    <%= hidden_field_tag "vehicle[]", vehiculo.id %>
+   <% for vehiculo in [4, 5, 6, 7, 8] %>
+    <%= hidden_field_tag "vehicle[]", vehiculo %>
   <% end %>
   <%= select_tag :tire_season, options_for_select([[t(:tire_season), '']] +
                     Spree::Variant::SEASON_OPTIONS), :class => "span2 styled-select" %>

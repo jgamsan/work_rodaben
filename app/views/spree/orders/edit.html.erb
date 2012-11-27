@@ -1,11 +1,9 @@
-<% @body_id = 'cart' %>
-
 <div class="span12">
   <h1><%= t(:shopping_cart) %></h1>
   <% if @order.line_items.empty? %>
     <div data-hook="empty_cart">
       <p><%= t(:your_cart_is_empty) %></p>
-      <p><%= link_to t(:continue_shopping), products_path, :class => 'button continue' %></p>
+      <p><%= link_to t(:continue_shopping), root_path, :class => 'btn btn-primary' %></p>
     </div>
   <% else %>
     <div data-hook="outside_cart_form">
@@ -17,29 +15,31 @@
           <div data-hook="cart-discounts">
             <fieldset>
               <%= render :partial => 'discounts' %>
-              <div class="row">
-                <div class="span4">
-                  <%= button_tag :class => 'btn btn-primary', :id => 'update-button' do %>
-                    <%= t(:update) %>
-                  <% end %>
-                </div>
-                <div class="span4">
-                  <div id="empty-cart" data-hook>
-                    <%= form_tag empty_cart_path, :method => :put do %>
-                      <%= button_tag t(:empty_cart), :class => 'btn btn-primary' %>
-                      <%= t(:or) %>
-                      <%= link_to t(:continue_shopping), products_path, :class => 'btn btn-primary' %>
-                    <% end %>
-                  </div>
-                </div>
-                <div class="span4">
-                  <%= link_to t(:checkout), checkout_path, :class => 'btn btn-primary pull-right', :id => 'checkout-link' %>
-                </div>
-              </div>
             </fieldset>
+          </div>
+          <div class="row">
+            <div class="span4">
+              <%= button_tag :class => 'btn btn-primary', :id => 'update-button' do %>
+                <%= t(:update) %>
+              <% end %>
+              <%= button_tag :class => 'btn btn-primary', :id => 'checkout-link', :name => 'checkout' do %>
+                <%= t(:checkout) %>
+              <% end %>
+            </div>
           </div>
         </div>
       <% end %>
+    </div>
+    <div class="row">
+      <div class="span4 offset4">
+        <div id="empty-cart" data-hook>
+          <%= form_tag empty_cart_path, :method => :put do %>
+            <%= submit_tag t(:empty_cart), :class => 'btn btn-primary' %>
+            <%= t(:or) %>
+            <%= link_to t(:continue_shopping), root_path, :class => 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>

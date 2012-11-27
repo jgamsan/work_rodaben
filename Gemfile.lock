@@ -45,7 +45,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_search_rodaben.git
-  revision: fdd46d3bc6cafb5704ee386dc817a28be224966b
+  revision: fc7840c366fe3988a0515f37587111149b8c5736
   specs:
     spree_search_rodaben (1.1.1)
       spree_core (>= 1.0.0)
@@ -63,49 +63,6 @@ GIT
   specs:
     spree_workshop (1.2.0)
       spree_core (>= 1.2.0)
-
-GIT
-  remote: git://github.com/spree/spree.git
-  revision: 6c76e6166f43ca46313a617e662246970d97db8c
-  branch: 1-2-stable
-  specs:
-    spree (1.2.3.beta)
-      spree_api (= 1.2.3.beta)
-      spree_cmd (= 1.2.3.beta)
-      spree_core (= 1.2.3.beta)
-      spree_dash (= 1.2.3.beta)
-      spree_promo (= 1.2.3.beta)
-      spree_sample (= 1.2.3.beta)
-    spree_api (1.2.3.beta)
-      spree_core (= 1.2.3.beta)
-    spree_cmd (1.2.3.beta)
-      thor (>= 0.14.6)
-    spree_core (1.2.3.beta)
-      activemerchant (= 1.28.0)
-      acts_as_list (= 0.1.4)
-      awesome_nested_set (= 2.1.4)
-      aws-sdk (~> 1.3.4)
-      cancan (= 1.6.7)
-      deface (>= 0.9.0)
-      ffaker (~> 1.12.0)
-      highline (= 1.6.11)
-      jquery-rails (~> 2.0)
-      kaminari (= 0.13.0)
-      money (= 5.0.0)
-      paperclip (~> 2.8)
-      rabl (= 0.7.2)
-      rails (~> 3.2.9)
-      ransack (~> 0.7.0)
-      select2-rails (~> 3.0)
-      state_machine (= 1.1.2)
-      stringex (~> 1.3.2)
-    spree_dash (1.2.3.beta)
-      httparty (~> 0.8.1)
-      spree_core (= 1.2.3.beta)
-    spree_promo (1.2.3.beta)
-      spree_core (= 1.2.3.beta)
-    spree_sample (1.2.3.beta)
-      spree_core (= 1.2.3.beta)
 
 GIT
   remote: git://github.com/spree/spree_auth_devise
@@ -380,6 +337,43 @@ GEM
       thor (~> 0.14)
     sketches (0.1.1)
     spoon (0.0.1)
+    spree (1.2.2)
+      spree_api (= 1.2.2)
+      spree_cmd (= 1.2.2)
+      spree_core (= 1.2.2)
+      spree_dash (= 1.2.2)
+      spree_promo (= 1.2.2)
+      spree_sample (= 1.2.2)
+    spree_api (1.2.2)
+      spree_core (= 1.2.2)
+    spree_cmd (1.2.2)
+      thor (>= 0.14.6)
+    spree_core (1.2.2)
+      activemerchant (= 1.28.0)
+      acts_as_list (= 0.1.4)
+      awesome_nested_set (= 2.1.4)
+      aws-sdk (~> 1.3.4)
+      cancan (= 1.6.7)
+      deface (>= 0.9.0)
+      ffaker (~> 1.12.0)
+      highline (= 1.6.11)
+      jquery-rails (~> 2.0)
+      kaminari (= 0.13.0)
+      money (= 5.0.0)
+      paperclip (~> 2.8)
+      rabl (= 0.7.2)
+      rails (~> 3.2.9)
+      ransack (~> 0.7.0)
+      select2-rails (~> 3.0)
+      state_machine (= 1.1.2)
+      stringex (~> 1.3.2)
+    spree_dash (1.2.2)
+      httparty (~> 0.8.1)
+      spree_core (= 1.2.2)
+    spree_promo (1.2.2)
+      spree_core (= 1.2.2)
+    spree_sample (1.2.2)
+      spree_core (= 1.2.2)
     spree_skrill (1.0.2)
       spree_core (>= 1.0.0)
     spree_usa_epay (1.0.2)
@@ -451,7 +445,7 @@ DEPENDENCIES
   rails-i18n
   rvm-capistrano
   sass-rails
-  spree!
+  spree (= 1.2.2)
   spree_addings_for_rodaben!
   spree_auth_devise!
   spree_contact_us!
