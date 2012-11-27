@@ -11,6 +11,12 @@
   <%= select_tag :tire_speed_code_id, options_for_select([[t(:speed_code), '']] +
                   Spree::TireSpeedCode.by_taxon(4).map {|t| [t.name, t.id]},
                   @speed ? @speed.id : params[:tire_speed_code_id]), :class => "span2 styled-select" %>
+  <%= select_tag :marca, options_for_select([[t(:brand), '']] +
+                  Spree::Taxon.by_car.map {|t| [t.name, t.id]},
+                  @taxon ? @taxon.id : params[:marca]), :class => "span2 styled-select" %>
+   <% for vehiculo in Spree::Taxon.where(:parent_id => 3) %>
+    <%= hidden_field_tag "vehicle[]", vehiculo.id %>
+  <% end %>
   <%= select_tag :tire_season, options_for_select([[t(:tire_season), '']] +
                     Spree::Variant::SEASON_OPTIONS), :class => "span2 styled-select" %>
   <div class="styled-label">

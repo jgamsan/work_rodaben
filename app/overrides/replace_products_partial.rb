@@ -19,7 +19,7 @@ Deface::Override.new(:virtual_path => %q{spree/shared/_products},
           </div>
         </div>
         <div class="span5">
-          <h4><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %></h4>
+          <h5><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %></h5>
           <div class="row">
             <div class="span2">
               <span class="badge badge-info price"><%= product.calculate_tires %></span>

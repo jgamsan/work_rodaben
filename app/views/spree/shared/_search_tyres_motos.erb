@@ -11,6 +11,10 @@
   <%= select_tag :tire_speed_code_id, options_for_select([[t(:speed_code), '']] +
                   Spree::TireSpeedCode.by_taxon(9).map {|t| [t.name, t.id]},
                   @speed ? @speed.id : params[:tire_speed_code_id]), :class => "span2 styled-select" %>
+  <%= select_tag :marca, options_for_select([[t(:brand), '']] +
+                  Spree::Taxon.by_moto.map {|t| [t.name, t.id]},
+                  @taxon ? @taxon.id : params[:marca]), :class => "span2 styled-select" %>
+  <%= hidden_field_tag "vehicle[]", 9 %>
   <%= submit_tag t(:search), :name => nil, :class => "btn btn-primary" %>
 
 <% end -%>
