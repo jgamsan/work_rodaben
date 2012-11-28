@@ -12,17 +12,14 @@
           <div data-hook="cart_items">
             <%= render :partial => 'form', :locals => { :order_form => order_form } %>
           </div>
-          <div data-hook="cart-discounts">
-            <fieldset>
-              <%= render :partial => 'discounts' %>
-            </fieldset>
-          </div>
           <div class="row">
             <div class="span4">
               <%= button_tag :class => 'btn btn-primary', :id => 'update-button' do %>
+                <i class="icon-refresh icon-white"></i>
                 <%= t(:update) %>
               <% end %>
               <%= button_tag :class => 'btn btn-primary', :id => 'checkout-link', :name => 'checkout' do %>
+                <i class="icon-check icon-white"></i>
                 <%= t(:checkout) %>
               <% end %>
             </div>
@@ -31,12 +28,18 @@
       <% end %>
     </div>
     <div class="row">
-      <div class="span4 offset4">
+      <div class="span5 offset3">
         <div id="empty-cart" data-hook>
           <%= form_tag empty_cart_path, :method => :put do %>
-            <%= submit_tag t(:empty_cart), :class => 'btn btn-primary' %>
+            <%#= submit_tag t(:empty_cart), :class => 'btn btn-primary' %>
+            <button type="submit" class="btn btn-primary">
+              <i class="icon-remove icon-white"></i> <%= t(:empty_cart) %>
+            </button>
             <%= t(:or) %>
-            <%= link_to t(:continue_shopping), root_path, :class => 'btn btn-primary' %>
+            <%= link_to root_path, :class => 'btn btn-primary' do %>
+              <i class="icon-shopping-cart icon-white"></i>
+              <%= t(:continue_shopping) %>
+            <% end -%>
           <% end %>
         </div>
       </div>

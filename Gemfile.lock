@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 56735a315a179a0c86f494f8b7a30ff12af288a8
+  revision: fff2a8b4d63b8e2e69e9e651b67ece4d2fdb186c
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -379,7 +379,7 @@ GEM
     spree_usa_epay (1.0.2)
       savon
       spree_core (>= 1.0.0)
-    sprockets (2.2.1)
+    sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)

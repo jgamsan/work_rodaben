@@ -1,0 +1,9 @@
+<% if Spree::Promotion.count > 0 %>
+  <div class="control-group" data-hook='coupon_code'>
+    <label for="input01" class="control-label">Codigo del Cupon: </label>
+    <div class="controls">
+      <%= form.text_field :coupon_code, :class => "input-xlarge", :placeholder => "Introduce tu copon aqui" %>
+      <p class="help-block">You can only use one discount code at a time</p>
+    </div>
+  </div>
+<% end %>
