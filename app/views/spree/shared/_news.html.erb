@@ -1,9 +1,10 @@
 <% if Spree::Post.all.any? -%>
   <div id="news-container" class="news">
+    <h3 style="text-align:center;">Noticias</h3>
     <ul>
       <% Spree::Post.published.each do |post| -%>
-        <li class="new"><%= l post.created_at, :format => '%A, %d%^b%Y, %H:%M' %><br>
-        <%= post.title.upcase %><br>
+        <li class="published"><h4><%= l post.created_at, :format => '%A, %d%^b%Y, %H:%M' %></h4>
+        <span class="label label-important"><%= post.title.upcase %></span><br>
         <%= post.description %></li>
       <% end -%>
     </ul>

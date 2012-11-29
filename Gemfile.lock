@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_news.git
-  revision: 7b1952597f06b1b509eb9b1c49101c2e8bd67db0
+  revision: c747bc4dcf821eba9719a938001ac31dc7048b54
   specs:
     spree_news (0.0.5)
       haml

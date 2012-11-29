@@ -27,15 +27,7 @@ $(function() {
   });
 });
 
-$(function() {
-  $('#news-container').vTicker({
-    speed: 1000,
-    pause: 4000,
-    animation: 'fade',
-    mousePause: true,
-    showItems: 1
-  });
-});
+
 
 $(function() {
   // when the #country field changes

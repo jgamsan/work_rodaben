@@ -260,13 +260,18 @@ a.full {
   margin-left: 40px;
 }
 .offert {
-  margin-top: 10px;
+//  margin-top: 5px;
   margin-left: 40px;
 }
 .news {
   font-size: 14px;
 }
 
+.published {
+  padding-top: 5px;
+  padding-left: 10px;
+  list-style-type: none;
+}
   /*--------------------------------------*/
   /* Checkout
   /*--------------------------------------*/
@@ -316,7 +321,9 @@ $product_list_price_font_size:          16px !default;
     }
   }
 
-
+li.last {
+  list-style-type: none;
+}
 
 
 #checkout-summary {
