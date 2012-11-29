@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: fff2a8b4d63b8e2e69e9e651b67ece4d2fdb186c
+  revision: 17d58cd5619b657f09e54654a8277da34be64c05
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -164,6 +164,9 @@ GEM
     coffee-script-source (1.4.0)
     css3-progress-bar-rails (0.4.0)
       rails (>= 3.1)
+    css_parser (1.2.6)
+      addressable
+      rdoc
     deface (0.9.1)
       nokogiri (~> 1.5.0)
       rails (~> 3.1)
@@ -318,6 +321,11 @@ GEM
       polyamorous (~> 0.5.0)
     rdoc (3.12)
       json (~> 1.4)
+    roadie (2.3.4)
+      actionmailer (> 3.0.0, < 3.3.0)
+      css_parser
+      nokogiri (>= 1.4.4)
+      sprockets
     rvm-capistrano (1.2.7)
       capistrano (>= 2.0.0)
     sass (3.2.3)
@@ -443,6 +451,7 @@ DEPENDENCIES
   pg
   rails (= 3.2.9)
   rails-i18n
+  roadie
   rvm-capistrano
   sass-rails
   spree (= 1.2.2)

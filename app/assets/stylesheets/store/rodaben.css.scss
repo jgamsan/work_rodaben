@@ -19,9 +19,9 @@ html {
 }
 
 #banner{
-  margin: 5px 0;
+  margin: 0px 0;
   width: 980px;
-  height: 208px;
+  height: 280px;
   background: url(../banner.jpg) no-repeat;
   float: left;
 }
@@ -32,6 +32,15 @@ html {
   background: url(../inicio_sesion.jpg) no-repeat;
   float: right;
 }
+
+#fondo_link{
+  background: url(../fondo_link.png) no-repeat;
+  width: 150px;
+  height: 60px;
+  float: left;
+  margin: -100px 20px;
+}
+
 .social{
   width: 980px;
   height: 50px;
@@ -40,7 +49,7 @@ html {
 .social ul{
   width: 100px;
   height: 50px;
-  margin: 115px -315px;
+  margin: 155px 45px;
   list-style: none;
   float: right;
 }
@@ -221,8 +230,9 @@ html {
 }
 
 .search {
-  float:right;
-  margin-top: 20px;
+  float:left;
+  padding: 10px;
+  margin-top: 170px;
   & select, input, button {
     font-size: 11px;
   }

@@ -29,6 +29,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'rails-i18n'
 gem 'css3-progress-bar-rails'
+gem 'roadie'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'devise-i18n'
