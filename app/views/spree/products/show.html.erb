@@ -52,18 +52,22 @@
       <div class="span9">
         <div class="tabbable">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#1" data-toggle="tab">Description</a></li>
+            <li class="active"><a href="#1" data-toggle="tab">Descripcion</a></li>
+            <li><a href="#2" data-toggle="tab">Datos Tecnicos</a></li>
             <li><a href="#2" data-toggle="tab">Reviews</a></li>
-            <li><a href="#3" data-toggle="tab">Related products</a></li>
+            <li><a href="#4" data-toggle="tab">Productos Similares</a></li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="1">
               <%= product_description(@product) rescue t(:product_has_no_description) %>
             </div>
             <div class="tab-pane" id="2">
-              <p>There are no reviews for this product.</p>
+              <%= render :partial => 'spree/products/tires_info' %>
             </div>
             <div class="tab-pane" id="3">
+              <p>There are no reviews for this product.</p>
+            </div>
+            <div class="tab-pane" id="4">
               <ul class="thumbnails related_products">
                 <li class="span2">
                   <div class="thumbnail">

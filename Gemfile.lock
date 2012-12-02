@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 17d58cd5619b657f09e54654a8277da34be64c05
+  revision: 80a7e9635410bd8796f6395632a4923f91bdeb8b
   specs:
     spree_addings_for_rodaben (1.1.2)
       spree_core (>= 1.0.0)
@@ -260,7 +260,7 @@ GEM
     money (5.0.0)
       i18n (~> 0.4)
       json
-    multi_json (1.3.7)
+    multi_json (1.4.0)
     multi_xml (0.5.1)
     net-http-digest_auth (1.2.1)
     net-http-persistent (2.8)
